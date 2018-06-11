@@ -33,7 +33,7 @@ public class HomeController {
         return ResponseEntity.ok(hello);
     }
 
-    @GetMapping("/microsoft-logout")
+    @GetMapping("/logout")
     public ResponseEntity<String> logout(HttpServletRequest request) {
         HttpSession session = request.getSession();
 
